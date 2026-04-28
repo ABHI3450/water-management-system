@@ -1,35 +1,41 @@
-💧 Smart Water Management System
+# 💧 Smart Water Management System
 
-A desktop-based simulation tool to design and optimize water distribution networks using graph algorithms. The system allows users to create nodes (houses/sources), connect them via pipelines, and visualize efficient water distribution paths.
+A desktop-based simulation tool to design and optimize water distribution networks using graph algorithms.
 
-🚀 Features
-Add, move, and delete nodes (houses or water sources)
-Connect/disconnect pipelines between nodes
-Interactive UI with pan and zoom
-Grid overlay for alignment
-Run simulation to compute optimal pipeline connections
-Visual representation of the network
-🧠 How It Works
+## 🚀 Features
 
-The system models the water network as a graph:
+- Add, move, and delete nodes (houses or water sources)
+- Connect/disconnect pipelines
+- Interactive UI with pan and zoom
+- Grid overlay for alignment
+- Run simulation to compute optimal connections
+- Visual visualization of the network
 
-Nodes → Houses or water sources
-Edges → Pipelines
+## 🧠 How It Works
 
-When simulation is triggered:
+- Nodes → Houses or water sources  
+- Edges → Pipelines  
 
-A Minimum Spanning Tree (Prim’s Algorithm) is applied
-It finds the most efficient way to connect all nodes with minimum total distance/cost
+The system uses **Minimum Spanning Tree (Prim’s Algorithm)** to find the most efficient way to connect all nodes.
 
-The result is then displayed visually on the interface.
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Python 3
-PyQt6 → GUI development
-NetworkX → Graph modeling and algorithms
-NumPy → Numerical operations
-Matplotlib → Visualization
+- Python
+- PyQt6
+- NetworkX
+- NumPy
+- Matplotlib
+
+## ⚙️ Installation
+
+```bash
+git clone <your-repo-link>
+cd SmartWaterManagement
+pip install -r requirements.txt
+python main.py
+```
 📂 Project Structure
+```bash
 project/
 │── main.py
 │── check_and_install.py
@@ -37,23 +43,25 @@ project/
 │── ui/
 │── logic/
 │── visualization/
-⚙️ Installation
-git clone <your-repo-link>
-cd SmartWaterManagement
-pip install -r requirements.txt
-python main.py
+```
 🧪 Future Improvements
-Add real-time water flow simulation (pressure, capacity)
-Implement Max Flow algorithms for realistic distribution
-Convert into a web-based dashboard
-Integrate IoT-based real-world data
+
+● Add real-time water flow simulation
+
+● Implement Max Flow algorithms
+
+● Convert to web app
+
 ⚠️ Limitations
-Focuses on structural optimization, not real fluid dynamics
-Works best for small to medium-sized networks
-No real-time data integration yet
-🎯 Use Case
-Educational tool for understanding network optimization
-Basic simulation for water distribution planning
+
+● No real fluid dynamics (only structure optimization)
+
+● Works best for small networks
+
 📜 License
 
-MIT License
+
+● MIT License
+
+
+
