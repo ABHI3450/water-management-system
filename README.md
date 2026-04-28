@@ -29,7 +29,7 @@ The system uses **Minimum Spanning Tree (Prim’s Algorithm)** to find the most 
 ## ⚙️ Installation
 
 ```bash
-git clone <your-repo-link>
+git clone <https://github.com/ABHI3450/water-management-system>
 cd SmartWaterManagement
 pip install -r requirements.txt
 python main.py
